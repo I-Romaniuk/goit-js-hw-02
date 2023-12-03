@@ -1,24 +1,23 @@
-"use strict";
 function getShippingCost(country) {
   let message;
 
-  const China = 100;
-  const Chile = 250;
-  const Australia = 170;
-  const Jamaica = 120;
+  const CHINA_COST = 100;
+  const CHILE_COST = 250;
+  const AUSTRALIA_COST = 170;
+  const JAMAICA_COST = 120;
 
   switch (country) {
     case "China":
-      message = `Shipping to ${country} will cost ${China} credits`;
+      message = `Shipping to ${country} will cost ${CHINA_COST} credits`;
       break;
     case "Chile":
-      message = `Shipping to ${country} will cost ${Chile} credits`;
+      message = `Shipping to ${country} will cost ${CHILE_COST} credits`;
       break;
     case "Australia":
-      message = `Shipping to ${country} will cost ${Australia} credits`;
+      message = `Shipping to ${country} will cost ${AUSTRALIA_COST} credits`;
       break;
     case "Jamaica":
-      message = `Shipping to ${country} will cost ${Jamaica} credits`;
+      message = `Shipping to ${country} will cost ${JAMAICA_COST} credits`;
       break;
     default:
       message = `Sorry, there is no delivery to your country`;
